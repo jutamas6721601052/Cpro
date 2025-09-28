@@ -16,12 +16,11 @@ void main(){
 		printf("\napple cant float.");	
 	}else if(density_apple==1000){
 		H=2*r_apple;
-		v_water=mass/density_apple;
+		v_water=H*(M_PI*pow(r_beaker,2));
 		printf("Must use water %f m^3\nthe high of water is %f m",v_water,H);
 	}else if(density_apple<1000){
-		v_water=mass/1000;
+		v_water=(density_apple/1000)*(mass/density_apple);
 		H=v_water/(M_PI*pow(r_beaker,2));
 		printf("Must use water %f m^3\nthe high of water is %f m",v_water,H);
 	}
 }
-
