@@ -45,7 +45,7 @@ void main(){
 				scanf("%f",&user1.price);
 				if(user1.price>=(day_use*2)){
 					user1.price-=day_use; 
-					printf("\nprice you pay self is %ã2f",user1.price);
+					printf("\nprice you pay self is %Ã£2f",user1.price);
 					break;
 				}else{
 					day_use=user1.price/2;
